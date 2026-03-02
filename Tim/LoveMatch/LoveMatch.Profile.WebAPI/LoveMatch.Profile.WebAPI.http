@@ -1,0 +1,6 @@
+@LoveMatch.Profile.WebAPI_HostAddress = http://localhost:5183
+
+GET {{LoveMatch.Profile.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

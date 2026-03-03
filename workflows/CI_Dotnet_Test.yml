@@ -5,6 +5,7 @@ on:
     branches:
     - develop
     - main
+    - feature-ci-actions
   pull_request:
     branches:
     - main

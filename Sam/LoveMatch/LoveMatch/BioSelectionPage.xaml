@@ -1,13 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoveMatch.MainPage"
+             x:Class="LoveMatch.BioSelectionPage"
              xmlns:converters="clr-namespace:LoveMatch.Converters"
              Title="Selecteer Bio's">
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <!-- Converter voor Like-knop -->
             <converters:BoolToLikeTextConverter x:Key="BoolToLikeTextConverter"/>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -15,9 +14,9 @@
     <ScrollView>
         <StackLayout Padding="10" Spacing="10">
 
-            <Label Text="Selecteer max 3 leden"
-                   FontSize="24"
-                   FontAttributes="Bold"
+            <Label Text="Selecteer max 3 leden" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
                    HorizontalOptions="Center"/>
 
             <CollectionView ItemsSource="{Binding Members}" SelectionMode="None">
@@ -25,13 +24,10 @@
                     <DataTemplate>
                         <Border Stroke="Gray" StrokeThickness="1" Padding="10" Margin="5">
                             <StackLayout Spacing="5">
-                                <!-- Naam, Leeftijd en Bio -->
                                 <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold"/>
                                 <Label Text="{Binding Age, StringFormat='Leeftijd: {0}'}"/>
                                 <Label Text="{Binding Bio}" FontAttributes="Italic"/>
-
-                                <!-- Like-knop -->
-                                <Button Text="{Binding IsLiked, Converter={StaticResource BoolToLikeTextConverter}}"
+                                <Button Text="{Binding IsLiked, Converter={StaticResource BoolToLikeTextConverter}}" 
                                         Clicked="OnLikeButtonClicked"/>
                             </StackLayout>
                         </Border>
@@ -39,7 +35,6 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-            <!-- Navigeer naar gelikede profielen -->
             <Button Text="Bekijk Profielen" Clicked="OnViewProfilesClicked" Margin="10"/>
         </StackLayout>
     </ScrollView>

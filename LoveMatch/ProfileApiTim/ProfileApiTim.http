@@ -1,0 +1,6 @@
+@ProfileApiTim_HostAddress = http://localhost:5125
+
+GET {{ProfileApiTim_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

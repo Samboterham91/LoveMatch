@@ -2,7 +2,8 @@ name: CI .NET - DatingApp
 
 on:
   push:
-  
+    branches:
+    - develop
   pull_request:
     branches:
     - main

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\lovematch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\lovematch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\bioselectionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\bioselectionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\lovematch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\lovematch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +35,12 @@
       "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\likedprofilespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\bioselectionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\bioselectionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\bioselectionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\bioselectionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\converters\\booltoliketextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\converters\\booltoliketextconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "LoveMatch\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\MainPage.xaml.cs",
-              "RelativeToolTip": "LoveMatch\\MainPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T20:38:37.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\App.xaml.cs",
               "RelativeDocumentMoniker": "LoveMatch\\App.xaml.cs",
@@ -87,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "LikedProfilesPage.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\LikedProfilesPage.xaml",
               "RelativeDocumentMoniker": "LoveMatch\\LikedProfilesPage.xaml",
@@ -100,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\MainPage.xaml",
               "RelativeDocumentMoniker": "LoveMatch\\MainPage.xaml",
@@ -113,15 +96,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "BioSelectionPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\BioSelectionPage.xaml.cs",
               "RelativeDocumentMoniker": "LoveMatch\\BioSelectionPage.xaml.cs",
               "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\BioSelectionPage.xaml.cs",
               "RelativeToolTip": "LoveMatch\\BioSelectionPage.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T20:58:44.44Z"
+              "WhenOpened": "2026-03-03T20:58:44.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -150,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\Member.cs",
               "RelativeDocumentMoniker": "LoveMatch\\Models\\Member.cs",
@@ -158,11 +142,12 @@
               "RelativeToolTip": "LoveMatch\\Models\\Member.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T10:49:02.8Z"
+              "WhenOpened": "2026-02-25T10:49:02.8Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\App.xaml",
               "RelativeDocumentMoniker": "LoveMatch\\App.xaml",
@@ -170,12 +155,11 @@
               "RelativeToolTip": "LoveMatch\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-03T21:03:33.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-03T21:03:33.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LoveMatch.csproj",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
               "RelativeDocumentMoniker": "LoveMatch\\LoveMatch.csproj",
@@ -183,12 +167,11 @@
               "RelativeToolTip": "LoveMatch\\LoveMatch.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-25T10:48:32.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T10:48:32.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LikedProfilesPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\LikedProfilesPage.xaml.cs",
               "RelativeDocumentMoniker": "LoveMatch\\LikedProfilesPage.xaml.cs",

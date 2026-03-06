@@ -9,9 +9,36 @@ jobs:
   message:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Teams message
-        shell: pwsh
-        run: |
-          curl -H "Content-Type: application/json" \
-          -d "{'text': '🌅 **Rise and Grind!**.'}" \
-          ${{ secrets.WEBHOOK_TEAMS_URL }}
+    - name: Send Teams Message
+      shell: pwsh
+      run: |
+          $uri = "${{ secrets.WEBHOOK_TEAMS_URL }}"
+          $body = @{
+              type = "message"
+              attachments = @(
+                  @{
+                      contentType = "application/vnd.microsoft.card.adaptive"
+                      content = @{
+                          type = "AdaptiveCard"
+                          body = @(
+                              @{
+                                  type = "TextBlock"
+                                  text = "🌅 **Rise and Grind, LoveMatch Team!**"
+                                  weight = "Bolder"
+                                  size = "Medium"
+                              },
+                              @{
+                                  type = "TextBlock"
+                                  text = "${{ steps.quote_selector.outputs.selected_quote }}"
+                                  italic = $true
+                                  wrap = $true
+                              }
+                          )
+                          '$schema' = "http://adaptivecards.io/schemas/adaptive-card.json"
+                          version = "1.2"
+                      }
+                  }
+              )
+          } | ConvertTo-Json -Depth 10
+          
+          Invoke-RestMethod -Uri $uri -Method Post -Body $body -ContentType 'application/json'

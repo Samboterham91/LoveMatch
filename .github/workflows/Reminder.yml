@@ -1,6 +1,16 @@
-
 name: Rise and grind
 
-  on: schedule
+on: 
+  schedule:
+  
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  
+  steps:
+  name: Send message
+    
+
+  
 
 

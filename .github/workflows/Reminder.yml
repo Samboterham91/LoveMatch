@@ -1,0 +1,16 @@
+name: Rise and grind
+
+on: 
+  schedule:
+    - cron: "0 7 * * 0-6"
+  workflow_dispatch:      
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Teams message
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d "{'text': '🌅 **Rise and Grind!**.'}" \
+          ${{ secrets.WEBHOOK_TEAMS_URL }}

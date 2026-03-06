@@ -8,7 +8,9 @@ on:
 jobs:
   message:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Send message
-        run: echo "Rise and Grind!!"
+      - name: Send Teams message
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d "{'text': '🌅 **Rise and Grind!**.'}" \
+          ${{ secrets.WEBHOOK_TEAMS_URL }}

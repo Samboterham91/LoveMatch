@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Teams message
+        shell: pwsh
         run: |
           curl -H "Content-Type: application/json" \
           -d "{'text': '🌅 **Rise and Grind!**.'}" \

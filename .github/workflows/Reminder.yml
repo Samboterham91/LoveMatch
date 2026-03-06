@@ -2,15 +2,13 @@ name: Rise and grind
 
 on: 
   schedule:
-  
+    - cron: "0 7 * * 0-6"
+  workflow_dispatch:      
+
 jobs:
-  build:
-  runs-on: ubuntu-latest
-  
-  steps:
-  name: Send message
-    
+  message:
+    runs-on: ubuntu-latest
 
-  
-
-
+    steps:
+      - name: Send message
+        run: echo "Rise and Grind!!"

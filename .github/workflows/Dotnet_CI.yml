@@ -21,11 +21,11 @@ jobs:
         dotnet-version: 9.0.x
         
     - name: Install Maui workloads
-      run: dotnet workload restore 
+      run: dotnet workload restore LoveMatch/LoveMatch/LoveMatchProfileApi.sln
     - name: Restore dependencies
-      run: dotnet restore 
+      run: dotnet restore LoveMatch/LoveMatch/LoveMatchProfileApi.sln
     - name: Build
-      run: dotnet build  --no-restore --configuration Release
+      run: dotnet build LoveMatch/LoveMatch/LoveMatchProfileApi.sln --no-restore --configuration Release
     - name: Test
-      run: dotnet test  --no-build --configuration Release --verbosity normal
+      run: dotnet test LoveMatch/LoveMatch/LoveMatchProfileApi.sln --no-build --configuration Release --verbosity normal
  

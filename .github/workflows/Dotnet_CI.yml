@@ -27,5 +27,5 @@ jobs:
     - name: Test
       shell: pwsh
       run: dotnet test LoveMatchProfileApi.Tests.csproj --configuration Release --verbosity normal
-      working-directory: LoveMatch/LoveMatch/LoveMatch/LoveMatchProfileApi.Tests
+      working-directory: LoveMatch/LoveMatchProfileApi.Tests
  

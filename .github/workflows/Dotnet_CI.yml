@@ -25,5 +25,5 @@ jobs:
     - name: Build
       run: dotnet build LoveMatch/LoveMatchProfileApi/ProfileApi.csproj --no-restore --configuration Release
     - name: Test
-      run: dotnet test LoveMatch/LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --no-build --configuration Release --verbosity normal
+      run: dotnet test LoveMatch/LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --no-build --configuration Release --verbosity minimal
  

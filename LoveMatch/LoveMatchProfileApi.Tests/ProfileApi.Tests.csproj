@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NewApiDotnetAcht\ProfileApi.csproj" />
+    <ProjectReference Include="..\LoveMatchProfileApi\ProfileApi.csproj"/>
   </ItemGroup>
 
   <ItemGroup>

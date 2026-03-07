@@ -19,12 +19,13 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
+        
     - name: Install Maui workloads
-      run: dotnet workload restore LoveMatch/LoveMatch.sln
+      run: dotnet workload restore 
     - name: Restore dependencies
-      run: dotnet restore LoveMatch/LoveMatch.sln
+      run: dotnet restore 
     - name: Build
-      run: dotnet build LoveMatch/LoveMatch.sln --no-restore --configuration Release
+      run: dotnet build  --no-restore --configuration Release
     - name: Test
-      run: dotnet test LoveMatch/LoveMatch.sln --no-build --configuration Release --verbosity normal
+      run: dotnet test  --no-build --configuration Release --verbosity normal
  

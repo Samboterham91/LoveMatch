@@ -23,9 +23,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore LoveMatch/LoveMatchProfileApi/ProfileApi.csproj
     - name: Build
-      run: dotnet build LoveMatch/LoveMatchProfileApi/ProfileApi.csproj --no-restore --configuration Release
+      run: dotnet build LoveMatch/LoveMatchProfileApi/ProfileApi.csproj --no-restore --configuration Release --verbosity minimal
     - name: Test
       shell: pwsh
-      run: dotnet test LoveMatchProfileApi.Tests.csproj --configuration Release --verbosity normal
-      working-directory: LoveMatch/LoveMatchProfileApi.Tests
+      run: dotnet test LoveMatchProfileApi.Tests.csproj --configuration Release --verbosity minimal
+      working-directory: LoveMatch/LoveMatch/LoveMatchProfileApi.Tests
  

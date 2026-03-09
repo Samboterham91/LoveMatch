@@ -36,6 +36,7 @@
 using ProfileApi.Controllers;
 using ProfileApi.Services;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Profiles") ?? "Data Source=Profile.db";
 
 builder.Services.AddControllers();
 builder.Services.AddSingleton<ProfileService>();

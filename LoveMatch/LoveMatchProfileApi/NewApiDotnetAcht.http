@@ -1,6 +1,0 @@
-@NewApiDotnetAcht_HostAddress = http://localhost:5111
-
-GET {{NewApiDotnetAcht_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

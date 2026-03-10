@@ -43,7 +43,7 @@ namespace ProfileApi.Tests
             var profiles = service.GetProfiles();
 
             // Assert
-            var actualProfile = Assert.Single(profiles);
+            var actualProfile = Assert.Single(await profiles);
 
             // Assert.Equivalent kijkt naar de waarden van de velden.
             // Tip: Als de Id dwarsligt, kun je de vergelijking forceren:

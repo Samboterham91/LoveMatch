@@ -1,20 +1,44 @@
 ﻿using ProfileApi.Models;
+using Microsoft.EntityFrameworkCore;
+using ProfileApi.Data;
+
+
 
 namespace ProfileApi.Services
 {
-    public class ProfileService
+    public class ProfileService(ProfileDb db)
     {
-        private static readonly List<Profile> profiles = [];
+        private readonly ProfileDb _db = db;
 
-        public List<Profile> GetProfiles()
+        public async Task CreateProfile(Profile profile)
         {
-            return profiles;
+            _db.Profiles.Add(profile);
+            await _db.SaveChangesAsync();
         }
 
-        public Profile CreateProfile(Profile profile)
-        {
-            profiles.Add(profile);
-            return profile;
-        }
+        public List<Profile> GetProfiles() => _db.Profiles.ToList();
     }
 }
+
+
+
+
+
+
+
+
+
+//        private static readonly List<Profile> profiles = [];
+
+//        public List<Profile> GetProfiles()
+//        {
+//            return profiles;
+//        }
+
+//        public Profile CreateProfile(Profile profile)
+//        {
+//            profiles.Add(profile);
+//            return profile;
+//        }
+//    }
+//}

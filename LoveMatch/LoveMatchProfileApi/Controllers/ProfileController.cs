@@ -53,7 +53,7 @@ namespace ProfileApi.Controllers
             }
 
             await _profileService.DeleteProfile(id);
-            return NoContent(); // HTTP 204
+            return NoContent(); // HTTP 204, no matching content found
         }
     }
 }

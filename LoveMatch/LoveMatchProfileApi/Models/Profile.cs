@@ -22,7 +22,7 @@
 
         public string? BioText { get; set; }
 
-        public enum Genders
+        public enum Genders // String van maken 
         {
             Male,
             Female,

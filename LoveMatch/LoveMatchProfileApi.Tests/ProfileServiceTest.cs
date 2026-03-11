@@ -46,7 +46,6 @@ namespace ProfileApi.Tests
             var actualProfile = Assert.Single(await profiles);
 
             // Assert.Equivalent kijkt naar de waarden van de velden.
-            // Tip: Als de Id dwarsligt, kun je de vergelijking forceren:
             Assert.Equivalent(profile, actualProfile);
         }
     }

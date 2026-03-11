@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+actor Gast as g
+actor Lid as l
+actor Admin as a
+rectangle "'Love Match' Mobile Dating app" {
+    usecase uc1 as "UC1: App downloaden"
+    usecase uc2 as "UC2: Account registreren"
+    usecase uc3 as "UC3: Profiel aanmaken"
+    usecase uc4 as "UC4: Profiel aanpassen"
+    usecase uc5 as "UC5: Blind browsen"
+    usecase uc6 as "UC6: Matches onthullen"
+    usecase uc7 as "UC7: Match bevestigen"
+    usecase uc8 as "UC8: Speed date"
+    usecase uc9 as "UC9: Verlenging & Topics"
+    usecase uc10 as "UC10: Ban beheer"
+    usecase uc11 as "UC11: Data verwijderen"
+    }
+ g -- uc1
+ g -- uc2
+ l -- uc3
+ l -- uc4
+ l -- uc5
+ l -- uc6
+ l -- uc7
+ l -- uc8
+ l -- uc9
+ a -- uc10
+ l -- uc11
+@enduml

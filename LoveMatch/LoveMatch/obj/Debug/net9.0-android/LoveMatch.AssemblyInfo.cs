@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoveMatch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c28ddc4b245f3e17db72049ed964a75baf5a3bb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+36672204edd88dbd32551db967d01306be96d200")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoveMatch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoveMatch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

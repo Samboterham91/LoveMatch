@@ -39,6 +39,7 @@ jobs:
                               @{
                                   type = "Action.OpenUrl"
                                   title = "🚀 Open Backlog"
+                                  style = "positive"
                                   url = $backlogUrl
                               }
                           )

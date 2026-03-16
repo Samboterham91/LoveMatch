@@ -2,7 +2,7 @@ name: Rise and grind
 
 on: 
   schedule:
-    - cron: "0 7 * * 1-5"
+    - cron: "0 6 * * 1-5"
   workflow_dispatch:      
 
 jobs:
@@ -13,6 +13,7 @@ jobs:
       shell: pwsh
       run: |
           $uri = "${{ secrets.WEBHOOK_TEAMS_URL }}"
+          $backlogUrl = "https://github.com/users/Samboterham91/projects/1/views/1"
           $body = @{
               type = "message"
               attachments = @(
@@ -32,6 +33,13 @@ jobs:
                                   text = "${{ steps.quote_selector.outputs.selected_quote }}"
                                   italic = $true
                                   wrap = $true
+                              }
+                          )
+                              actions = @(
+                              @{
+                                  type = "Action.OpenUrl"
+                                  title = "🚀 Open Backlog"
+                                  url = $backlogUrl
                               }
                           )
                           '$schema' = "http://adaptivecards.io/schemas/adaptive-card.json"

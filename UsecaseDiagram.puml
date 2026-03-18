@@ -1,4 +1,5 @@
 @startuml
+skinparam Linetype Ortho
 left to right direction
 actor Gast as g
 actor Lid as l

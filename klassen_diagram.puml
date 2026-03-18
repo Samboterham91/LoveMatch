@@ -1,0 +1,68 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+
+abstract class User {
+  + Id: Int
+  + Username: String
+  - PasswordHash: String
+  + login()
+  + signIn()
+}
+
+class Member {
+  + DailySwipeCount: Int = 0
+  + {static} MAX_SWIPES: Int = 9
+  + canSwipe(): Boolean
+  + kiesFavorieten(selectedIds: List<Int>)
+}
+
+class Admin {
+  + readUser(id: Int): User
+  + updateUser(u: User)
+  + deleteUser(id: Int)
+}
+
+class Profile {
+  + Id: Int
+  + Firstname: String
+  + Lastname: String
+  + Age: Int
+  + Gender: String
+  + Bio: String
+  + Interests: List<String>
+  + wijzigProfiel()
+}
+
+class MatchPool {
+  + Date: Date
+  + PotentialMatchIds: List<Int>
+  + isFinalSelectionMade: Boolean
+}
+
+class VideoCall {
+  + StartTime: DateTime
+  + DurationMinutes: Int
+  + isActive: Boolean
+  + toonVraag(vraag: RandomQuestion)
+  + verlengGesprek()
+  + stopGesprek()
+}
+
+class RandomQuestion {
+  + Id: Int
+  + QuestionText: String
+  + Category: String
+}
+
+' Relaties
+User <|-- Member
+User <|-- Admin
+
+Member "1" *-- "1" Profile : omschrijft zichzelf
+Member "1" -- "0..*" MatchPool : krijgt dagelijks
+
+MatchPool "1" -- "0..1" VideoCall : resulteert in
+VideoCall "0..*" o-- "0..*" RandomQuestion : stelt tijdens gesprek
+
+@enduml

@@ -22,10 +22,10 @@ jobs:
         dotnet-version: 8.0.x
   
     - name: Restore dependencies
-      run: dotnet restore LoveMatch/LoveMatchProfileApi/ProfileApi.csproj
+      run: dotnet restore LoveMatchProfileApi/ProfileApi.csproj
     - name: Build
-      run: dotnet build LoveMatch/LoveMatchProfileApi/ProfileApi.csproj --no-restore --configuration Release --verbosity minimal
+      run: dotnet build LoveMatchProfileApi/ProfileApi.csproj --no-restore --configuration Release --verbosity minimal
     - name: Test
       shell: pwsh
-      run: dotnet test LoveMatch/LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --configuration Release --verbosity minimal
+      run: dotnet test LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --configuration Release --verbosity minimal
  

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\Sam\\LoveMatch\\LoveMatch\\LoveMatch.csproj": {}
+    "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\Sam\\LoveMatch\\LoveMatch\\LoveMatch.csproj": {
+    "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\Sam\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
+        "projectUniqueName": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
         "projectName": "LoveMatch",
-        "projectPath": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\Sam\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
+        "projectPath": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
         "packagesPath": "C:\\Users\\emche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\Sam\\LoveMatch\\LoveMatch\\obj\\",
+        "outputPath": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

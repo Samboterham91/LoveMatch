@@ -37,7 +37,7 @@ jobs:
         retention-days: 7
     - name: Test API (Profile.Api)
       if: always()
-      run: dotnet test LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --configuration Release --no-build --verbosity normal
+      run: dotnet test LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --configuration Release --no-build --verbosity normal --logger trx --results-directory ./TestResults
     - name: Test Reporter
       uses: dorny/test-reporter@v1
       if: always() # Zorgt dat het rapport altijd wordt aangemaakt, ook bij falen

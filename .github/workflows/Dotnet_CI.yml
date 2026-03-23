@@ -1,4 +1,4 @@
-name: CI .NET - DatingApp
+name: CI .NET - WebApi
 
 on:
   push:

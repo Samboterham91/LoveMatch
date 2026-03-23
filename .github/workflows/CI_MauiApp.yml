@@ -1,0 +1,48 @@
+name: CI.NET - MauiApp /w API Test
+
+on:
+  push:
+    branches:
+      - Develop
+      - Develop---Tim
+    
+  pull_request:
+    branches: [ "main", "Develop" ]
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET 9.0
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.x
+    - name: Install Maui workload
+      run: dotnet workload install maui --ignore-failed-sources
+    - name: Restore dependencies
+      run: dotnet restore LoveMatch.sln
+    - name: Build API (Profile.Api)
+      run: dotnet build LoveMatchProfileApi/ProfileApi.csproj --configuration Release
+    - name: Publish Android App
+      run: dotnet publish LoveMatch/LoveMatch.csproj -f net9.0-android -c Release --no-restore
+    - name: Upload Android Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: android-build
+        # Het pad naar de APK varieert soms, controleer je projectstructuur:
+        path: LoveMatch/bin/Release/net9.0-android/*-Signed.apk
+        retention-days: 7
+    - name: Test API (Profile.Api)
+      if: always()
+      run: dotnet test LoveMatchProfileApi.Tests/ProfileApi.Tests.csproj --configuration Release --no-build --verbosity normal
+    - name: Test Reporter
+      uses: dorny/test-reporter@v1
+      if: always() # Zorgt dat het rapport altijd wordt aangemaakt, ook bij falen
+      with:
+        name: API Test Results            # Naam van de check in GitHub
+        path: TestResults/*.trx           # Pad naar de gegenereerde bestanden
+        reporter: dotnet-trx
+      

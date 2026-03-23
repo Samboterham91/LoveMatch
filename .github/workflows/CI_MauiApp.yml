@@ -1,4 +1,4 @@
-name: .NET Workflow for MauiApp
+name: CI.NET - MauiApp /w API Test
 
 on:
   push:

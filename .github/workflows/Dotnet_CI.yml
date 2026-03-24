@@ -3,15 +3,19 @@ name: CI .NET - WebApi
 on:
   push:
     branches:
-    - Develop
     - Develop---Tim
+    - Develop
     paths-ignore:
-      - .github/workflows/
+    - '.github/workflows/**'
+    - '**.puml'
+    - '.gitignore'
+    - '.dockerignore'
   pull_request:
     branches:
     - main
     paths-ignore:
-    - .github/workflows/
+    - '.github/workflows/**'
+    - '**.puml'
   workflow_dispatch:
   
 jobs:

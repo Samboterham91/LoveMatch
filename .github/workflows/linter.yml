@@ -15,6 +15,7 @@ on:
       - '.dockerignore'
       - '.gitignore'
       - '**.uml'
+  workflow_dispatch:
 
 jobs:
   lint:

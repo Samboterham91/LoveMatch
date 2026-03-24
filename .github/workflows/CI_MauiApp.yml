@@ -5,11 +5,19 @@ on:
     branches:
       - Develop
       - Develop---Tim
-    
+    paths-ignore:
+    - '.github/workflows/**'
+    - '**.puml'
+    - '.gitignore'
+    - '.dockerignore'
   pull_request:
-    branches: [ "main", "Develop" ]
+    branches:
+    - main
+    - Develop
+    paths-ignore:
+    - '.github/workflows/**'
+    - '**.puml'
   workflow_dispatch:
-
 
 permissions:
       checks: write

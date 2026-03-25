@@ -1,0 +1,34 @@
+name: C# and Action Linter
+
+on:
+  push:
+    branches:
+      - 'Develop**'
+    paths-ignore:
+      - '.dockerignore'
+      - '.gitignore'
+      - '**.uml'
+  pull_request:
+      branches:
+        - main
+      paths-ignore:
+      - '.dockerignore'
+      - '.gitignore'
+      - '**.uml'
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Check Formatting
+        run: dotnet format --verify-no-changes
+      - name: Lint GitHub Actions
+        uses: check-spelling/actionlint-action@v1
+      
+    

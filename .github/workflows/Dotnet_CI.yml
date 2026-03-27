@@ -11,12 +11,14 @@ on:
     - '.gitignore'
     - '.dockerignore'
     - '**.yml'
+    - 'README.md'
   pull_request:
     branches:
     - main
     paths-ignore:
     - '.github/workflows/**'
     - '**.puml'
+    - 'README.md'
   workflow_dispatch:
   
 jobs:

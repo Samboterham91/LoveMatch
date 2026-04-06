@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FCM Test</title>
+</head>
+<body>
+    <h1>Firebase Token Generator</h1>
+    <button id="btnToken">Get Token</button>
+
+    <p><strong>Status:</strong> <span id="status">Nog niets gedaan</span></p>
+    <p><strong>Token:</strong></p>
+    <textarea id="token" rows="10" cols="100" readonly></textarea>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+        import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-messaging.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBDB1huDOiwPXR3QjaThxNmacW1aRnyWdA",
+            authDomain: "lovematchnotifications-d47fb.firebaseapp.com",
+            projectId: "lovematchnotifications-d47fb",
+            storageBucket: "lovematchnotifications-d47fb.firebasestorage.app",
+            messagingSenderId: "319299211863",
+            appId: "1:319299211863:web:9edebca30fffb92773c912"
+        };
+
+        const vapidKey = "BEt3u_teUtOL1T1fFysiBn3k3e4Hs00WjKbl7mIA34U8lPN4uCC-8El7wndU-5IZT5cXSrauZnh2MRZ5qjhwly8";
+
+        const statusEl = document.getElementById("status");
+        const tokenEl = document.getElementById("token");
+        const btn = document.getElementById("btnToken");
+
+        const app = initializeApp(firebaseConfig);
+        const messaging = getMessaging(app);
+
+        btn.addEventListener("click", async () => {
+            try {
+                statusEl.textContent = "Toestemming aanvragen...";
+                tokenEl.value = "";
+
+                const permission = await Notification.requestPermission();
+                console.log("Notification permission:", permission);
+
+                if (permission !== "granted") {
+                    statusEl.textContent = "Geen toestemming voor notificaties.";
+                    return;
+                }
+
+                statusEl.textContent = "Service worker registreren...";
+                const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
+
+                statusEl.textContent = "Token ophalen...";
+                const currentToken = await getToken(messaging, {
+                    vapidKey: vapidKey,
+                    serviceWorkerRegistration: registration
+                });
+
+                console.log("FCM token:", currentToken);
+
+                if (currentToken) {
+                    tokenEl.value = currentToken;
+                    statusEl.textContent = "Token opgehaald.";
+                } else {
+                    statusEl.textContent = "Geen token ontvangen.";
+                }
+            } catch (error) {
+                console.error("Fout bij token ophalen:", error);
+                statusEl.textContent = "Fout: " + error.message;
+            }
+        });
+    </script>
+</body>
+</html>

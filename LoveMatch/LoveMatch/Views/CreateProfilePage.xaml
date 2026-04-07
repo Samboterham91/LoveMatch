@@ -1,0 +1,14 @@
+﻿<ContentPage
+    x:Class="LoveMatch.Views.CreateProfilePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+	<VerticalStackLayout Padding="20">
+		<Entry Placeholder="Naam" x:Name="NameEntry" />
+		<Entry Placeholder="Leeftijd" x:Name="AgeEntry" Keyboard="Numeric"/>
+		<Editor Placeholder="Bio" x:Name="BioEditor" HeightRequest="100"/>
+
+		<Button Text="Opslaan" Clicked="OnSaveClicked"/>
+	</VerticalStackLayout>
+
+</ContentPage>

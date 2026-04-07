@@ -71,6 +71,13 @@
 	  <MauiXaml Update="LikedProfilesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CreateProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
 </Project>

@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LoveMatch.Models;
+using SQLite;
+
+namespace LoveMatch.Data;
+
+public class Database
+{
+    private SQLiteAsyncConnection _database;
+
+    public async Task Init()
+    {
+        if (_database != null) return;
+
+        string dbPath = Path.Combine(FileSystem.AppDataDirectory, "lovematch.db3");
+        _database = new SQLiteAsyncConnection(dbPath);
+
+        await _database.CreateTableAsync<Member>();
+    }
+
+    public async Task<bool> Register(string username, string password)
+    {
+        await Init();
+
+        var existing = await _database.Table<Member>()
+            .Where(m => m.Username == username)
+            .FirstOrDefaultAsync();
+
+        if (existing != null) return false;
+
+        var member = new Member();
+        member.Username = username;
+        member.Password = password;
+
+        await _database.InsertAsync(member);
+        return true;
+    }
+
+    public async Task<bool> Login(string username, string password)
+    {
+        await Init();
+
+        var member = await _database.Table<Member>()
+            .Where(m => m.Username == username && m.Password == password)
+            .FirstOrDefaultAsync();
+
+        return member != null;
+    }
+}

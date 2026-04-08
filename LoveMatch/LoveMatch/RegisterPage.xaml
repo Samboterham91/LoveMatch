@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoveMatch.RegisterPage"
+             Title="Register">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+            <Label Text="register"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="UsernameEntry"
+                   Placeholder="naam" />
+
+            <Entry x:Name="PasswordEntry"
+                   Placeholder="wachtwoord"
+                   IsPassword="True" />
+
+            <Button Text="account aanmkaen"
+                    Clicked="OnRegisterClicked" />
+
+            <Button Text="login"
+                    Clicked="OnBackToLoginClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

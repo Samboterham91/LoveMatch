@@ -2,12 +2,11 @@
 {
     public partial class App : Application
     {
-        public App()
+        public App(LoginPage loginPage)
         {
             InitializeComponent();
 
-            // Start met BioSelectionPage in NavigationPage
-            MainPage = new NavigationPage(new BioSelectionPage());
+            MainPage = new NavigationPage(loginPage);
         }
     }
 }

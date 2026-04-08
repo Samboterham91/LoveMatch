@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using LoveMatch.Data;
 
 namespace LoveMatch
 {
@@ -18,6 +19,7 @@ namespace LoveMatch
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton<Database>();
 
             return builder.Build();
         }

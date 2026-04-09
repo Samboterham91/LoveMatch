@@ -1,5 +1,4 @@
 ﻿using LoveMatch.Views;
-using Microsoft.Maui.Controls;
 
 namespace LoveMatch
 {
@@ -12,7 +11,7 @@ namespace LoveMatch
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-                  return new Window(new CreateProfilePage());
+            return new Window(new NavigationPage(new CreateProfilePage()));
         }
     }
 }

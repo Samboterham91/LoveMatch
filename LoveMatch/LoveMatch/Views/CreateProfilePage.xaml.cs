@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using LoveMatch.Models;
 using LoveMatch.Services;
-using LoveMatch.Views;
 
 namespace LoveMatch.Views
 {
@@ -21,10 +20,17 @@ namespace LoveMatch.Views
 
         private async void OnSaveClicked(object sender, EventArgs e)
         {
+            // Validatie leeftijd
+            if (!int.TryParse(AgeEntry.Text, out int age))
+            {
+                await DisplayAlert("Fout", "Voer een geldige leeftijd in", "OK");
+                return;
+            }
+
             var profile = new ProfileCreateDto
             {
                 Name = NameEntry.Text,
-                Age = int.Parse(AgeEntry.Text),
+                Age = age,
                 Bio = BioEditor.Text
             };
 
@@ -33,6 +39,9 @@ namespace LoveMatch.Views
             if (success)
             {
                 await DisplayAlert("Succes", "Profiel aangemaakt!", "OK");
+
+                // Navigeren naar lijstpagina
+                await Navigation.PushAsync(new ProfileListPage());
             }
             else
             {

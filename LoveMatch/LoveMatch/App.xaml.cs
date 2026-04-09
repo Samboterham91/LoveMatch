@@ -1,13 +1,17 @@
-﻿namespace LoveMatch
+﻿using LoveMatch.Views;
+
+namespace LoveMatch
 {
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
+        }
 
-            // Start met BioSelectionPage in NavigationPage
-            MainPage = new NavigationPage(new BioSelectionPage());
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new NavigationPage(new CreateProfilePage()));
         }
     }
 }

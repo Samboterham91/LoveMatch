@@ -1,4 +1,5 @@
-﻿namespace LoveMatch
+﻿/*
+namespace LoveMatch
 {
     public partial class AppShell : Shell
     {
@@ -8,3 +9,4 @@
         }
     }
 }
+*/

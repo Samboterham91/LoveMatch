@@ -1,4 +1,5 @@
 using LoveMatch.Data;
+using LoveMatch.Views;
 
 namespace LoveMatch;
 
@@ -30,7 +31,7 @@ public partial class LoginPage : ContentPage
             return;
         }
 
-        Application.Current!.MainPage = new NavigationPage(new BioSelectionPage(_db));
+        Application.Current!.MainPage = new NavigationPage(new CreateProfilePage());
     }
 
     private async void OnGoToRegisterClicked(object sender, EventArgs e)

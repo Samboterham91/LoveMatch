@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LoveMatch.Controllers
 {
+    // Tim 12-04-2026: Deze controller beheert de locatiegegevens van profielen. Het bevat een endpoint om de locatie van een profiel bij te werken en een endpoint om nabijgelegen gebruikers op te halen op basis van hun locatie.
 
     [ApiController]
     [Route("api/profiles")]

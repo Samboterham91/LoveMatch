@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using LoveMatch.Services;
+using Microsoft.Extensions.Logging;
 
 namespace LoveMatch
 {
@@ -7,6 +8,10 @@ namespace LoveMatch
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+            
+            builder.Services.AddHttpClient<LocationService>(); // Tim 12-04-2026 Hier wordt de LocationService toegevoegd voor de OpenFreeMaps API.
+
+
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>

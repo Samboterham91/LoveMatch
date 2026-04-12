@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace LoveMatch.Helpers
 {
     public static class DistanceHelper
-    {
-            public static double CalculateDistance(double lat1, double lon1, double lat2, double lon2)
+    {   // Tim 12-04-2026: Deze helperklasse bevat een methode om de afstand tussen twee geografische coördinaten te berekenen, wat nuttig is voor het matchen van profielen op basis van locatie.
+        public static double CalculateDistance(double lat1, double lon1, double lat2, double lon2)
             {
                 var R = 6371; // km
 

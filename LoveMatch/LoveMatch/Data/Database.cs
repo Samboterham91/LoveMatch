@@ -11,6 +11,7 @@ namespace LoveMatch.Data;
 public class Database
 {
     private SQLiteAsyncConnection _database;
+    public int? CurrentMemberId { get; private set; }
 
     public async Task Init()
     {
@@ -48,6 +49,39 @@ public class Database
             .Where(m => m.Username == username && m.Password == password)
             .FirstOrDefaultAsync();
 
+        CurrentMemberId = member?.Id;
+
         return member != null;
+    }
+
+    public async Task<bool> UpdateCurrentMemberProfile(string name, int age, string bio)
+    {
+        await Init();
+
+        if (CurrentMemberId is null)
+        {
+            return false;
+        }
+
+        var member = await _database.Table<Member>()
+            .Where(m => m.Id == CurrentMemberId.Value)
+            .FirstOrDefaultAsync();
+
+        if (member is null)
+        {
+            return false;
+        }
+
+        member.Name = name;
+        member.Age = age;
+        member.Bio = bio;
+
+        var rows = await _database.UpdateAsync(member);
+        return rows > 0;
+    }
+
+    public void Logout()
+    {
+        CurrentMemberId = null;
     }
 }

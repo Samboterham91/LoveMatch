@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using LoveMatch.Data;
+using LoveMatch.Services;
+using LoveMatch.Views;
 
 namespace LoveMatch
 {
@@ -20,6 +22,10 @@ namespace LoveMatch
     		builder.Logging.AddDebug();
 #endif
             builder.Services.AddSingleton<Database>();
+            builder.Services.AddSingleton<LoginPage>();
+            builder.Services.AddSingleton<ApiService>();
+            builder.Services.AddTransient<CreateProfilePage>();
+            builder.Services.AddTransient<ProfileListPage>();
 
             return builder.Build();
         }

@@ -2,11 +2,18 @@
 {
     public partial class App : Application
     {
-        public App(LoginPage loginPage)
+        private readonly IServiceProvider _services;
+
+        public App(IServiceProvider services)
         {
             InitializeComponent();
+            _services = services;
+        }
 
-            MainPage = new NavigationPage(loginPage);
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            var loginPage = _services.GetRequiredService<LoginPage>();
+            return new Window(new NavigationPage(loginPage));
         }
     }
 }

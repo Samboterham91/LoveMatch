@@ -15,6 +15,7 @@ public partial class BioSelectionPage : ContentPage
     public BioSelectionPage(Database db)
     {
         InitializeComponent();
+        _db = db;
 
         // Voeg demo leden toe met profielfoto
         Members.Add(new Member(1, "Sophie", 25, "Vrouw", "Amsterdam", "Loves traveling and coffee", "Travel, Coffee, Music", "https://randomuser.me/api/portraits/women/1.jpg"));
@@ -68,6 +69,7 @@ public partial class BioSelectionPage : ContentPage
             return;
         }
 
+        _db.Logout();
         Application.Current.MainPage = new NavigationPage(new LoginPage(_db));
     }
 }

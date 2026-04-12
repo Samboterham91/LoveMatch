@@ -67,6 +67,20 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -80,6 +94,10 @@
               "target": "Package",
               "version": "[9.0.13, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [
@@ -106,6 +124,20 @@
         "net9.0-ios26.0": {
           "targetAlias": "net9.0-ios",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -119,6 +151,10 @@
               "target": "Package",
               "version": "[9.0.13, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [
@@ -145,6 +181,20 @@
         "net9.0-maccatalyst26.0": {
           "targetAlias": "net9.0-maccatalyst",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -158,6 +208,10 @@
               "target": "Package",
               "version": "[9.0.13, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [
@@ -185,6 +239,20 @@
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -192,6 +260,10 @@
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.111, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
             }
           },
           "imports": [

@@ -11,5 +11,6 @@ namespace LoveMatch.Models
         public required string Name { get; set; }
         public required int Age { get; set; }
         public required string Bio { get; set; }
+        public required string City { get; set; }
     }
 }

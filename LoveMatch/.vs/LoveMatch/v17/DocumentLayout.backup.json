@@ -1,26 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\",
+  "WorkspaceRootPath": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\emche\\documents\\github\\lovematch\\lovematch\\lovematch\\views\\profilelistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\views\\profilelistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\services\\locationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\services\\locationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\emche\\documents\\github\\lovematch\\lovematch\\lovematch\\views\\profilelistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\controllers\\profilelocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\controllers\\profilelocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\lovematch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\lovematch.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\models\\profilecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\models\\profilecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\views\\profilelistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\views\\profilelistpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\emche\\documents\\github\\lovematch\\lovematch\\lovematch\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\views\\profilelistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\views\\profilelistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\emche\\documents\\github\\lovematch\\lovematch\\lovematch\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\models\\profilelocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\models\\profilelocationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\emche\\documents\\github\\lovematch\\lovematch\\lovematch\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|c:\\users\\tim\\documents\\ict ad zuyd\\lovematch\\lovematch\\lovematch\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{721260A7-06BE-4736-BD45-1A147B59B9F3}|LoveMatch\\LoveMatch.csproj|solutionrelative:lovematch\\models\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +46,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LocationService.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Services\\LocationService.cs",
+              "RelativeDocumentMoniker": "LoveMatch\\Services\\LocationService.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Services\\LocationService.cs",
+              "RelativeToolTip": "LoveMatch\\Services\\LocationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:37:02.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileLocationController.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Controllers\\ProfileLocationController.cs",
+              "RelativeDocumentMoniker": "LoveMatch\\Controllers\\ProfileLocationController.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Controllers\\ProfileLocationController.cs",
+              "RelativeToolTip": "LoveMatch\\Controllers\\ProfileLocationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T15:31:18.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoveMatch",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
+              "RelativeDocumentMoniker": "LoveMatch\\LoveMatch.csproj",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\LoveMatch.csproj",
+              "RelativeToolTip": "LoveMatch\\LoveMatch.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-12T15:29:10.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProfileLocationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\ProfileLocationDto.cs",
+              "RelativeDocumentMoniker": "LoveMatch\\Models\\ProfileLocationDto.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\ProfileLocationDto.cs",
+              "RelativeToolTip": "LoveMatch\\Models\\ProfileLocationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:50:08.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProfileCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\ProfileCreateDto.cs",
+              "RelativeDocumentMoniker": "LoveMatch\\Models\\ProfileCreateDto.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\ProfileCreateDto.cs",
+              "RelativeToolTip": "LoveMatch\\Models\\ProfileCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:49:21.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\Profile.cs",
+              "RelativeDocumentMoniker": "LoveMatch\\Models\\Profile.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Models\\Profile.cs",
+              "RelativeToolTip": "LoveMatch\\Models\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T14:23:35.873Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ProfileListPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml.cs",
               "RelativeDocumentMoniker": "LoveMatch\\Views\\ProfileListPage.xaml.cs",
-              "ToolTip": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml.cs",
               "RelativeToolTip": "LoveMatch\\Views\\ProfileListPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -51,11 +145,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ProfileListPage.xaml",
-              "DocumentMoniker": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml",
               "RelativeDocumentMoniker": "LoveMatch\\Views\\ProfileListPage.xaml",
-              "ToolTip": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\ProfileListPage.xaml",
               "RelativeToolTip": "LoveMatch\\Views\\ProfileListPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -64,41 +158,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Services\\ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "LoveMatch\\Services\\ApiService.cs",
-              "ToolTip": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\Tim\\Documents\\ICT AD Zuyd\\LoveMatch\\LoveMatch\\LoveMatch\\Services\\ApiService.cs",
               "RelativeToolTip": "LoveMatch\\Services\\ApiService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-09T15:02:18.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\App.xaml.cs",
-              "RelativeDocumentMoniker": "LoveMatch\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\App.xaml.cs",
-              "RelativeToolTip": "LoveMatch\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T20:15:37.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\MainPage.xaml",
-              "RelativeDocumentMoniker": "LoveMatch\\Views\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\emche\\Documents\\GitHub\\LoveMatch\\LoveMatch\\LoveMatch\\Views\\MainPage.xaml",
-              "RelativeToolTip": "LoveMatch\\Views\\MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-09T14:50:46.827Z",
               "EditorCaption": ""
             }
           ]

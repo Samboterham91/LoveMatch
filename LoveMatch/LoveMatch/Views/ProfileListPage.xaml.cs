@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Maui.Controls;
 using LoveMatch.Models;
 using LoveMatch.Services;
 
@@ -16,7 +15,7 @@ namespace LoveMatch.Views
         public ProfileListPage(ApiService apiService)
         {
             InitializeComponent();
-            _apiService = apiService;
+            _apiService = apiService ?? throw new ArgumentNullException(nameof(apiService));
         }
 
         protected override async void OnAppearing()
@@ -28,9 +27,10 @@ namespace LoveMatch.Views
         private async Task LoadProfiles()
         {
             var profiles = await _apiService.GetProfiles();
+
             ProfilesCollection.ItemsSource = profiles;
 
-            if (profiles.Count == 0)
+            if (profiles == null || profiles.Count == 0)
             {
                 await DisplayAlert("Info", "Geen profielen gevonden of API is niet bereikbaar.", "OK");
             }

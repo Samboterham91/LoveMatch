@@ -1,25 +1,17 @@
-﻿using Microsoft.Maui;
+﻿using Microsoft.Maui.Controls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using LoveMatch.Models;
 using LoveMatch.Services;
-using LoveMatch.Data;
 
 namespace LoveMatch.Views
 {
     public partial class CreateProfilePage : ContentPage
     {
-        private ApiService _apiService = new ApiService();
+        private readonly ApiService _apiService = new ApiService();
 
-        private readonly Database _db;
-
-        public CreateProfilePage(Database db)
+        public CreateProfilePage()
         {
             InitializeComponent();
-            _db = db;
         }
 
         private async void OnSaveClicked(object sender, EventArgs e)
@@ -33,7 +25,6 @@ namespace LoveMatch.Views
                 return;
             }
 
-            // Validatie leeftijd
             if (!int.TryParse(AgeEntry.Text, out int age))
             {
                 await DisplayAlert("Fout", "Voer een geldige leeftijd in", "OK");
@@ -42,35 +33,31 @@ namespace LoveMatch.Views
 
             var profile = new ProfileCreateDto
             {
-                Name = NameEntry.Text,
+                Name = name,
                 Age = age,
-                Bio = BioEditor.Text
+                Bio = bio
             };
 
-            var success = await _apiService.CreateProfile(profile);
-
-            if (success)
+            try
             {
-                await DisplayAlert("Succes", "Profiel aangemaakt!", "OK");
+                var success = await _apiService.CreateProfile(profile);
 
-                // Navigeren naar lijstpagina
-                await Navigation.PushAsync(new ProfileListPage());
+                if (success)
+                {
+                    await DisplayAlert("Succes", "Profiel aangemaakt!", "OK");
+
+                    // FIX: ApiService doorgeven
+                    await Navigation.PushAsync(new ProfileListPage(_apiService));
+                }
+                else
+                {
+                    await DisplayAlert("Fout", "Er ging iets mis bij het aanmaken van het profiel.", "OK");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                await DisplayAlert("Fout", "Er ging iets mis", "OK");
-            var success = await _db.UpdateCurrentMemberProfile(name, age, bio);
-
-            if (success)
-            {
-                await DisplayAlert("Succes", "Profiel bijgewerkt!", "OK");
-                await Navigation.PushAsync(new BioSelectionPage(_db));
-            }
-            else
-            {
-                await DisplayAlert("Fout", "Profiel opslaan mislukt. Log opnieuw in en probeer het nog eens.", "OK");
+                await DisplayAlert("Fout", $"Server niet bereikbaar: {ex.Message}", "OK");
             }
         }
     }
 }
-

@@ -1,3 +1,4 @@
+using LoveMatch.Data;
 using LoveMatch.Models;
 using System.Collections.ObjectModel;
 
@@ -5,14 +6,16 @@ namespace LoveMatch;
 
 public partial class BioSelectionPage : ContentPage
 {
+    private readonly Database _db;
     public ObservableCollection<Member> Members { get; set; } = new ObservableCollection<Member>();
 
     private int likedCount = 0;
     private const int maxLikes = 3;
 
-    public BioSelectionPage()
+    public BioSelectionPage(Database db)
     {
         InitializeComponent();
+        _db = db;
 
         // Voeg demo leden toe met profielfoto
         Members.Add(new Member(1, "Sophie", 25, "Vrouw", "Amsterdam", "Loves traveling and coffee", "Travel, Coffee, Music", "https://randomuser.me/api/portraits/women/1.jpg"));
@@ -56,5 +59,17 @@ public partial class BioSelectionPage : ContentPage
         }
 
         await Navigation.PushAsync(new LikedProfilesPage(likedMembers));
+    }
+
+    private async void OnLogoutClicked(object sender, EventArgs e)
+    {
+        var confirmed = await DisplayAlert("Uitloggen", "Weet je zeker dat je wilt uitloggen?", "Ja", "Nee");
+        if (!confirmed)
+        {
+            return;
+        }
+
+        _db.Logout();
+        Application.Current.MainPage = new NavigationPage(new LoginPage(_db));
     }
 }

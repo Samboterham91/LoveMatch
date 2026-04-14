@@ -10,12 +10,13 @@ namespace LoveMatch.Views
 {
     public partial class ProfileListPage : ContentPage
     {
-        private ApiService _apiService = new ApiService();
+        private readonly ApiService _apiService;
         private int selectedCount = 0;
 
-        public ProfileListPage()
+        public ProfileListPage(ApiService apiService)
         {
             InitializeComponent();
+            _apiService = apiService;
         }
 
         protected override async void OnAppearing()
@@ -28,6 +29,11 @@ namespace LoveMatch.Views
         {
             var profiles = await _apiService.GetProfiles();
             ProfilesCollection.ItemsSource = profiles;
+
+            if (profiles.Count == 0)
+            {
+                await DisplayAlert("Info", "Geen profielen gevonden of API is niet bereikbaar.", "OK");
+            }
         }
 
         private async void OnSelectClicked(object sender, EventArgs e)

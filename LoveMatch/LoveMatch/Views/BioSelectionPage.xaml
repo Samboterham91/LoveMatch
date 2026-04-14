@@ -19,6 +19,10 @@
                    FontAttributes="Bold" 
                    HorizontalOptions="Center"/>
 
+            <Button Text="Uitloggen"
+                    Clicked="OnLogoutClicked"
+                    HorizontalOptions="End"/>
+
             <CollectionView ItemsSource="{Binding Members}" SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>

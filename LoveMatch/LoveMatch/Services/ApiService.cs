@@ -8,9 +8,9 @@ using System.Net.Http.Json;
 
 namespace LoveMatch.Services
 {
-       public class ApiService
+    public class ApiService
     {
-        private HttpClient _httpClient;
+        private readonly HttpClient _httpClient;
 
         public ApiService()
         {
@@ -43,20 +43,37 @@ namespace LoveMatch.Services
         
         public async Task<bool> CreateProfile(ProfileCreateDto profile) // Hier wordt CreateProfilePage geinjecteerd en de methode doet een POST request naar de API om een nieuw profiel aan te maken.
         {
-            var response = await _httpClient.PostAsJsonAsync("/api/profiles", profile);
-            
-            if (!response.IsSuccessStatusCode)
+            try
             {
-                var errorContent = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Error creëren profiel: {response.StatusCode} - {errorContent}");
+                var response = await _httpClient.PostAsJsonAsync("/api/profiles", profile);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Error creëren profiel: {response.StatusCode} - {errorContent}");
+                }
+
+                return response.IsSuccessStatusCode;
             }
-            return response.IsSuccessStatusCode;
+            catch (Exception ex)
+            {
+                Console.WriteLine($"API fout bij profiel opslaan: {ex.Message}");
+                return false;
+            }
         }
 
         public async Task<List<ProfileReadDto>> GetProfiles() // Een GET request naar de API om alle profielen op te halen en retourneert een lijst van ProfileReadDto's.
         {
-            var result = await _httpClient.GetFromJsonAsync<List<ProfileReadDto>>("/api/profiles");
-            return result ?? new List<ProfileReadDto>();
+            try
+            {
+                var result = await _httpClient.GetFromJsonAsync<List<ProfileReadDto>>("/api/profiles");
+                return result ?? new List<ProfileReadDto>();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"API fout bij profielen ophalen: {ex.Message}");
+                return new List<ProfileReadDto>();
+            }
         }
     }
 }

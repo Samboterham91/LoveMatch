@@ -1,10 +1,19 @@
-﻿namespace LoveMatch.Models
+﻿using SQLite;
+
+namespace LoveMatch.Models
 {
     public class Member
     {
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+
+        // Verplicht voor inloggen/registreren
+        public string Username { get; set; } = "";
+        public string Password { get; set; } = "";
+
+        // Overige velden zijn optioneel
         public string Name { get; set; } = "";
-        public int Age { get; set; }
+        public int? Age { get; set; }
         public string Gender { get; set; } = "";
         public string Location { get; set; } = "";
         public string Bio { get; set; } = "";

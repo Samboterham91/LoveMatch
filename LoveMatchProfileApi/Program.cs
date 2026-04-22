@@ -1,10 +1,12 @@
-﻿using ProfileApi.Controllers;
+﻿using Microsoft.EntityFrameworkCore;
+using ProfileApi.Controllers;
 using ProfileApi.Data;
 using ProfileApi.Services;
+using System;
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("ProfilesDb") ?? "Data Source=Profile.db";
+builder.Services.AddDbContext<ProfileDb>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddSqlite<ProfileDb>(connectionString);
+
 builder.Services.AddControllers();
 builder.Services.AddScoped<ProfileService>();
 builder.Services.AddEndpointsApiExplorer();
